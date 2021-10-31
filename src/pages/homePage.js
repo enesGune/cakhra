@@ -1,11 +1,14 @@
 
-import React, {Component} from "react";
+import React, { Component } from "react";
+import { theme } from "../ch/ch";
 
-class HomePageComponent extends Component{
+
+class HomePageComponent extends Component {
     render() {
         return (
-            <div>
-                <h1>first</h1>
+            <div style={theme}>
+                <h1>first</h1>               
+                
             </div>
         );
     }

@@ -1,13 +1,14 @@
 
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom'
-import HomePageComponent from"../pages/homePage"
-import {HOME_PAGE} from "../constants/routePaths"
+import HomePageComponent from"../pages/homePage";
+import {HOME_PAGE} from "../constants/routePaths";
+
+
 class RoutesComponent extends Component{
     render() {
         return (
-            <div>
-                
+            <div>                
                 <Route exact path={HOME_PAGE} component={HomePageComponent}/>
             </div>
         );
