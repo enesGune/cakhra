@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import { theme, property } from "../ch/ch";
-import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow, FormControl, FormLabel, Input, FormHelperText, RadioGroup, Radio } from "@chakra-ui/react";
+import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow, FormControl, FormLabel, Input, FormHelperText, RadioGroup, Radio, RangeSlider, RangeSliderTrack, RangeSliderFilledTrack, RangeSliderThumb } from "@chakra-ui/react";
 import { ChevronDownIcon, StarIcon } from '@chakra-ui/icons'
 
 class HomePageComponent extends Component {
@@ -9,6 +9,17 @@ class HomePageComponent extends Component {
     render() {
         return (
             <div style={theme}>
+                <RangeSlider
+                    aria-label={["min", "max"]}
+                    colorScheme="pink"
+                    defaultValue={[10, 30]}
+                >
+                    <RangeSliderTrack>
+                        <RangeSliderFilledTrack />
+                    </RangeSliderTrack>
+                    <RangeSliderThumb index={0} />
+                    <RangeSliderThumb index={1} />
+                </RangeSlider>
                 <FormControl as="fieldset">
                     <FormLabel as="legend">Favorite Naruto Character</FormLabel>
                     <RadioGroup defaultValue="Itachi">
