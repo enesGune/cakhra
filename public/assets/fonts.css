@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: local("OpenSans-Bold"), url("/assets/fonts/OpenSans-Bold.eot");
+    src: local("OpenSans-Bold"), url("/assets/fonts/OpenSans-Bold?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: local("OpenSans-SemiBold"), url("/assets/fonts/OpenSans-SemiBold.eot");
+    src: local("OpenSans-SemiBold"), url("/assets/fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-SemiBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: local("OpenSans-Regular"), url("/assets/fonts/OpenSans-Regular.eot");
+    src: local("OpenSans-Regular"), url("/assets/fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    src: local("OpenSans-ExtraBold"), url("/assets/fonts/OpenSans-ExtraBold.eot");
+    src: local("OpenSans-ExtraBold"), url("/assets/fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-ExtraBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: local("Poppins-Light"), url("/assets/fonts/Poppins-Light.eot");
+    src: local("Poppins-Light"), url("/assets/fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Poppins-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: local("Poppins-Regular"), url('/assets/fonts/Poppins-Regular.eot');
+    src: local("Poppins-Regular"), url('/assets/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-Medium';
+    src: local("OpenSans-Medium"), url('/assets/fonts/OpenSans-Medium.eot');
+    src: local("OpenSans-Medium"), url('/assets/fonts/OpenSans-Medium.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

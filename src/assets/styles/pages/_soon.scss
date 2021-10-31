@@ -1,0 +1,27 @@
+.soon-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: $textClr;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    .soon-block {
+        .logo-block {
+            padding-bottom: 181px;
+        }
+        .title-block {
+            h3 {
+                @include font-semibold;
+                color: $white;
+                font-size: 64px;
+                margin: 0 0 12px 0;
+            }
+            h1 {
+                @include font-bold;
+                color: $white;
+                font-size: 120px;
+            }
+        }
+    }
+}
