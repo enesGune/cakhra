@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import { theme, property } from "../ch/ch";
-import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow } from "@chakra-ui/react";
+import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow, FormControl, FormLabel, Input, FormHelperText, RadioGroup, Radio } from "@chakra-ui/react";
 import { ChevronDownIcon, StarIcon } from '@chakra-ui/icons'
 
 class HomePageComponent extends Component {
@@ -9,7 +9,24 @@ class HomePageComponent extends Component {
     render() {
         return (
             <div style={theme}>
-
+                <FormControl as="fieldset">
+                    <FormLabel as="legend">Favorite Naruto Character</FormLabel>
+                    <RadioGroup defaultValue="Itachi">
+                        <HStack spacing="24px">
+                            <Radio value="Sasuke">Sasuke</Radio>
+                            <Radio value="Nagato">Nagato</Radio>
+                            <Radio value="Itachi">Itachi</Radio>
+                            <Radio value="Sage of the six Paths">Sage of the six Paths</Radio>
+                        </HStack>
+                    </RadioGroup>
+                    <FormHelperText>Select only if you're a fan.</FormHelperText>
+                </FormControl>
+                <FormControl id="email">
+                    <FormLabel>Email address</FormLabel>
+                    <Input type="email" />
+                    <FormHelperText>We'll never share your email.</FormHelperText>
+                </FormControl>
+                <br />
                 <Popover>
                     <PopoverTrigger>
                         <Button>Trigger</Button>
