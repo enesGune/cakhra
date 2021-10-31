@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import { theme, property } from "../ch/ch";
-import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag } from "@chakra-ui/react";
+import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow } from "@chakra-ui/react";
 import { ChevronDownIcon, StarIcon } from '@chakra-ui/icons'
 
 class HomePageComponent extends Component {
@@ -9,6 +9,23 @@ class HomePageComponent extends Component {
     render() {
         return (
             <div style={theme}>
+
+                <Popover>
+                    <PopoverTrigger>
+                        <Button>Trigger</Button>
+                    </PopoverTrigger>
+                    <PopoverContent>
+                        <PopoverArrow />
+                        <PopoverCloseButton />
+                        <PopoverHeader>Confirmation!</PopoverHeader>
+                        <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                    </PopoverContent>
+                </Popover>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <HStack spacing={4}>
                     {["sm", "md", "lg"].map((size) => (
                         <Tag size={size} key={size} variant="solid" colorScheme="teal">
