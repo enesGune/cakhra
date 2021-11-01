@@ -1,1 +1,3 @@
-export const HOME_PAGE = "/";
+export const ONE_PAGE = "/";
+export const TWO_PAGE = "/son";
+

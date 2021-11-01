@@ -4,7 +4,7 @@ import { theme, property } from "../ch/ch";
 import { Text, Heading, Button, Stack, HStack, VStack, Menu, MenuButton, MenuList, MenuItem, Box, Badge, Image, Tag, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverCloseButton, PopoverArrow, FormControl, FormLabel, Input, FormHelperText, RadioGroup, Radio, RangeSlider, RangeSliderTrack, RangeSliderFilledTrack, RangeSliderThumb } from "@chakra-ui/react";
 import { ChevronDownIcon, StarIcon } from '@chakra-ui/icons'
 
-class HomePageComponent extends Component {
+class OnePageComponent extends Component {
 
     render() {
         return (
@@ -144,4 +144,4 @@ class HomePageComponent extends Component {
     }
 }
 
-export default HomePageComponent;
+export default OnePageComponent;

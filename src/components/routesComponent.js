@@ -1,15 +1,18 @@
 
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom'
-import HomePageComponent from"../pages/homePage";
-import {HOME_PAGE} from "../constants/routePaths";
+import OnePageComponent from"../pages/homePage";
+import SoonPageComponent from "../pages/soonPage"
+import {ONE_PAGE, TWO_PAGE} from "../constants/routePaths";
 
 
 class RoutesComponent extends Component{
     render() {
         return (
             <div>                
-                <Route exact path={HOME_PAGE} component={HomePageComponent}/>
+                <Route exact path={ONE_PAGE} component={OnePageComponent}/>
+                <Route exact path={TWO_PAGE} component={SoonPageComponent}/>
+
             </div>
         );
     }
