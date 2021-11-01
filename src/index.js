@@ -19,7 +19,7 @@ let store = createStore(reducers, window.initialStoreData ? window.initialStoreD
 
 
 ReactDOM.render(
-    <ChakraProvider>
+    <ChakraProvider store={store}>
          
         <BrowserRouter>
             <App/>
