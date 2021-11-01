@@ -9,7 +9,7 @@ import {createLogger} from 'redux-logger'
 import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
-
+import { ChakraProvider } from "@chakra-ui/react"
 
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {
@@ -19,11 +19,15 @@ let store = createStore(reducers, window.initialStoreData ? window.initialStoreD
 
 
 ReactDOM.render(
-    <Provider store={store}>
+    <ChakraProvider>
+         
         <BrowserRouter>
             <App/>
         </BrowserRouter>
-    </Provider>,
+   
+    </ChakraProvider>
+   
+    ,
     document.getElementById('root')
 );
 
