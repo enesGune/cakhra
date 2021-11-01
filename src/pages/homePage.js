@@ -8,7 +8,8 @@ class HomePageComponent extends Component {
 
     render() {
         return (
-            <div style={theme}>
+            <div >
+                
                 <RangeSlider
                     aria-label={["min", "max"]}
                     colorScheme="pink"
