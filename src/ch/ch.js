@@ -8,6 +8,12 @@ export const colors = {
     700: "#2a69ac",
   },
 }
+export const theme = extendTheme({
+  fonts: {
+    heading: "Open Sans",
+    body: "Raleway",
+  },
+})
 
 export const property = {
     imageUrl: "https://bit.ly/2Z4KKcF",
@@ -20,4 +26,3 @@ export const property = {
     rating: 4,
 }
 
-export const theme = extendTheme({ colors })

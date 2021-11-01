@@ -10,7 +10,9 @@ import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
 import { ChakraProvider } from "@chakra-ui/react"
-
+import "@fontsource/raleway/400.css"
+import "@fontsource/open-sans/700.css"
+import {theme} from "./ch/ch"
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {
     middleware.push(createLogger());
@@ -19,7 +21,7 @@ let store = createStore(reducers, window.initialStoreData ? window.initialStoreD
 
 
 ReactDOM.render(
-    <ChakraProvider store={store}>
+    <ChakraProvider theme={theme}>
          
         <BrowserRouter>
             <App/>
